@@ -25,4 +25,14 @@ I'm on a tight schedule.
 Setting up Spark inside Colab was done in another way.
 Java is already installed there, so skipped.
 
-Migration to use RDD DataFrames ongoing.
+Migration to use RDD DataFrames after a Pandas version was implemented.
+
+The schema was deduced from the superset, and used while loading the data from JSON
+
+GDPR compliance: the sensitive data was encrypted with a strong AES key. The key is stored in a Google Colab secret.
+
+Data is written to a parquet file, with partitioning on branch ID
+
+
+
+
